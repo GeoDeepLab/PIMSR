@@ -4,10 +4,7 @@ Official PyTorch implementation of **PIMSR**, a physics-informed DEM
 super-resolution method that uses co-registered SAR observations to recover
 high-resolution elevation details from low-resolution DEM inputs.
 
-PIMSR combines residual DEM reconstruction, multi-scale VV/VH SAR feature
-fusion, and a differentiable SAR-domain consistency loss. The repository is
-organized as research code for training, evaluation, ablation, and preparing
-the HDF5 data used by the model.
+PIMSR combines residual DEM reconstruction, multi-scale VV/VH SAR feature fusion, and a differentiable SAR-domain consistency loss. The repository is organized as research code for training, evaluation, ablation, and preparing the HDF5 data used by the model. The pretrained model checkpoint is available for download from the Releases page.
 
 ## Highlights
 
