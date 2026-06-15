@@ -23,10 +23,10 @@ from utils import (
 # Config
 # =============================================================================
 
-TRAIN_H5_PATH = Path(r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Train_data\train_data_real_lr.h5")
-VAL_H5_PATH = Path(r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Val_data\val_data_real_lr.h5")
+TRAIN_H5_PATH = Path("Train_data/train_data.h5")
+VAL_H5_PATH = Path("Val_data/val_data.h5")
 
-OUTPUT_DIR = Path(r"E:\TP_DSM_SR_PIMSR\PIMSR\PIMSR-1\sar_simulator_project-R4\explicit_lia_batchnorm_filtered_output")
+OUTPUT_DIR = Path("sar_simulator_project-R4/output_train")
 
 BEST_MODEL_PATH = OUTPUT_DIR / "best_precise_simulator.pth"
 LAST_MODEL_PATH = OUTPUT_DIR / "last_precise_simulator.pth"
