@@ -14,9 +14,9 @@ from utils import normalize_sar_pair_by_target_batch, ensure_dir
 # Config
 # =============================================================================
 
-TEST_H5_PATH = Path(r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data\test_data_real_lr.h5")
+TEST_H5_PATH = Path(r"Test_data/test_data.h5")
 
-OUTPUT_DIR = Path(r"E:\TP_DSM_SR_PIMSR\PIMSR\PIMSR-1\sar_simulator_project-R4\explicit_lia_batchnorm_filtered_output")
+OUTPUT_DIR = Path(r"sar_simulator_project-R4/output")
 MODEL_PATH = OUTPUT_DIR / "best_precise_simulator.pth"
 
 TEST_METRICS_FILE = OUTPUT_DIR / "test_metrics.txt"
