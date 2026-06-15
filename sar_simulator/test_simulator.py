@@ -14,9 +14,9 @@ from utils import normalize_sar_pair_by_target_batch, ensure_dir
 # Config
 # =============================================================================
 
-TEST_H5_PATH = Path(r"Test_data/test_data.h5")
+TEST_H5_PATH = Path("Test_data/test_data.h5")
 
-OUTPUT_DIR = Path(r"sar_simulator_project-R4/output")
+OUTPUT_DIR = Path("sar_simulator_project-R4/output_test")
 MODEL_PATH = OUTPUT_DIR / "best_precise_simulator.pth"
 
 TEST_METRICS_FILE = OUTPUT_DIR / "test_metrics.txt"
