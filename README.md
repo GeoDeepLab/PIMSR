@@ -321,15 +321,3 @@ will be forwarded to `train.py`.
 - Use `--random_seed` to control initialization and dataloader randomness.
 - The SAR simulator checkpoint affects the SAR consistency loss; report the
   simulator version together with PIMSR results.
-
-## Results
-
-Please report performance on a fixed split using RMSE, MAE, PSNR, and SSIM.
-Fill in the table with the released checkpoint and dataset split used in your
-experiments.
-
-| Method | SAR Input | SAR Loss | Fusion Scales | RMSE (m) | MAE (m) | PSNR (dB) | SSIM |
-| --- | --- | --- | --- | ---: | ---: | ---: | ---: |
-| Bicubic | - | - | - | - | - | - | - |
-| PIMSR | VV + VH | no | 16,32,64 | - | - | - | - |
-| PIMSR | VV + VH | yes | 16,32,64 | - | - | - | - |
