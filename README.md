@@ -1,3 +1,5 @@
+![PIMSR framework](PIMSR.png)
+
 # PIMSR: Physics-Informed Multi-Scale SAR-Guided DEM Super-Resolution
 
 Official PyTorch implementation of **PIMSR**, a physics-informed DEM
