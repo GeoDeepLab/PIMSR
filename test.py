@@ -182,16 +182,16 @@ def main():
 
 
     parser.add_argument('--test_h5_path', type=str,
-                        default=r"Test_data/train_data.h5",
+                        default="Test_data/train_data.h5",
                         help='Path to the test HDF5 file (containing real LR data)')
 
     parser.add_argument('--test_dataset_csv', type=str,
-                        default=r"Test_data/data_index.csv",
+                        default="Test_data/data_index.csv",
                         help='Path to the test dataset index CSV file (for filename lookup)')
 
 
     parser.add_argument('--global_stats', type=str,
-                        default=r"Train_data/global_stats",
+                        default="Train_data/global_stats",
                         help='Global statistics JSON file for normalization')
     parser.add_argument('--sar_input_mode', type=str,
                         choices=['none', 'vv', 'vh', 'both'],
@@ -201,14 +201,14 @@ def main():
                         default='16,32,64',
                         help='Fusion scales used during training, e.g. 16, 32, 64, 16,32, 16,64, 32,64, 16,32,64')
     parser.add_argument('--model_weights', type=str,
-                        default=r"checkpoints/best_model.pth",
+                        default="checkpoints/best_model.pth",
                         help='Path to pretrained model weights')
     parser.add_argument('--output_dir', type=str,
-                        default=r"output_dir",
+                        default="output_dir",
                         help='Directory to save all results')
 
     parser.add_argument('--test_data_root', type=str,
-                        default=r"Test_data/test_data_tif",
+                        default="Test_data/test_data_tif",
                         help='Root directory of original HR TIF data (needed for GeoTIFF metadata)')
 
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for testing')
