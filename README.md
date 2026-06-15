@@ -107,22 +107,6 @@ The code has been tested with the following environment:
 | scipy | 1.11.4 |
 | pillow | 12.2.0 |
 
-A typical Conda environment can be created as follows:
-
-```bash
-conda create -n pimsr python=3.10.19
-conda activate pimsr
-
-pip install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu121
-pip install numpy==1.26.4 pandas==2.2.2 h5py==3.11.0 scikit-image==0.22.0
-pip install matplotlib==3.8.4 tqdm==4.67.1 rasterio==1.4.3
-pip install scipy==1.11.4 pillow==12.2.0
-conda install -c conda-forge gdal=3.10.2
-```
-
-GDAL installation can be platform-specific. If GeoTIFF export is not needed,
-training can still be run without using the evaluation export path.
-
 ## Data Preparation
 
 PIMSR uses HDF5 files for efficient training and evaluation. Each split should
