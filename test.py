@@ -182,16 +182,16 @@ def main():
 
 
     parser.add_argument('--test_h5_path', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data_SRTM\test_data_srtm_real_lr.h5",  #"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data_SRTM\test_data_srtm_real_lr.h5" E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data\test_data_real_lr.h5
+                        default=r"",
                         help='Path to the test HDF5 file (containing real LR data)')
 
     parser.add_argument('--test_dataset_csv', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data_SRTM\data_index.csv",
+                        default=r"",
                         help='Path to the test dataset index CSV file (for filename lookup)')
 
 
     parser.add_argument('--global_stats', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Train_data\global_stats.json",
+                        default=r"",
                         help='Global statistics JSON file for normalization')
     parser.add_argument('--sar_input_mode', type=str,
                         choices=['none', 'vv', 'vh', 'both'],
@@ -201,14 +201,14 @@ def main():
                         default='16,32,64',
                         help='Fusion scales used during training, e.g. 16, 32, 64, 16,32, 16,64, 32,64, 16,32,64')
     parser.add_argument('--model_weights', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\results\structure_ablation\scale_fusion\fusion_16_32\checkpoints\best_model.pth", # 结构和融合消融测试的时候，必须输入结构和消融对应的训练权重，而不是full模型的权重
+                        default=r"\checkpoints\best_model.pth",
                         help='Path to pretrained model weights')
     parser.add_argument('--output_dir', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\results\test\srtmdem\structure_ablation\scale_fusion\fusion_16_32",
+                        default=r"",
                         help='Directory to save all results')
 
     parser.add_argument('--test_data_root', type=str,
-                        default=r"E:\TP_DSM_SR_PIMSR\PIMSR\datasets\Test_data_SRTM",
+                        default=r"",
                         help='Root directory of original HR TIF data (needed for GeoTIFF metadata)')
 
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for testing')
