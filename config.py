@@ -66,43 +66,43 @@ def build_base_parser():
     parser.add_argument(
         "--train_h5_path",
         type=str,
-        default=r"Train_data/train_data.h5",
+        default="Train_data/train_data.h5",
         help="Path to the training HDF5 file with real LR data",
     )
     parser.add_argument(
         "--train_csv_path",
         type=str,
-        default=r"Train_data/data_index.csv",
+        default="Train_data/data_index.csv",
         help="Path to the training index CSV file",
     )
     parser.add_argument(
         "--val_h5_path",
         type=str,
-        default=r"Val_data/val_data.h5",
+        default="Val_data/val_data.h5",
         help="Path to the validation HDF5 file with real LR data",
     )
     parser.add_argument(
         "--val_csv_path",
         type=str,
-        default=r"Val_data/data_index.csv",
+        default="Val_data/data_index.csv",
         help="Path to the validation index CSV file",
     )
     parser.add_argument(
         "--global_stats",
         type=str,
-        default=r"Train_data/global_stats.json",
+        default="Train_data/global_stats.json",
         help="Global statistics JSON file",
     )
     parser.add_argument(
         "--simulator_weights",
         type=str,
-        default=r"best_precise_simulator.pth",
+        default="best_precise_simulator.pth",
         help="SAR simulator pretrained weights",
     )
     parser.add_argument(
         "--output_dir",
         type=str,
-        default=r"output_dir",
+        default="output_dir",
         help="Output directory",
     )
     parser.add_argument("--batch_size", type=int, default=16, help="Batch size")
