@@ -83,9 +83,6 @@ PIMSR/
   run_structure_ablation_tests.py  # structure ablation runner
 ```
 
-This release focuses on the PIMSR method. Baseline comparison code is not part
-of the public release.
-
 ## Installation
 
 The code has been tested with the following environment:
