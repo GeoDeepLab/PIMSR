@@ -1,4 +1,4 @@
-<img width="432" height="17" alt="image" src="https://github.com/user-attachments/assets/6d065984-49eb-4cc0-b7c4-76f18bedb6e1" />![PIMSR framework](PIMSR.png)
+![PIMSR framework](PIMSR.png)
 
 # PIMSR: Physics-Informed Multimodal Super-Resolution
 
